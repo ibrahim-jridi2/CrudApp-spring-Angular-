@@ -1,0 +1,19 @@
+server:
+  port: 8099
+
+spring:
+
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+    show-sql: true
+  datasource:
+      url: jdbc:postgresql://localhost:5432/productDB
+      username: data&&ibrahim_project
+      password: numeryx2020
+      driver-class-name: org.postgresql.Driver
+
